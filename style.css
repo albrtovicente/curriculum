@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: small;
+  line-height: 1.8em;
+} 
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url('./img/encabezado.png');
+  background-size: cover;
+  background-position: fixed;
+  color: rgb(0, 0, 0);
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+/* a {
+  color: #0bb6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+} */
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+
+a {
+  color: #2d9ac5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
