@@ -1,9 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  margin: 0px;
   font-family: 'Raleway';
   font-size: small;
   line-height: 1.8em;
-  background-color: #FFEAE5;
+  background-color: whitesmoke;
 
 } 
 /**************** Header **********************/
@@ -49,13 +53,6 @@ header, main, footer {
   height: 40px;
 }
 /**************** Fin Boton Imprimir ****************/
-/**************   Fondo Pantalla ********************/
-#fondo{
-  background-image: url('./img/uncle-sam-304887_1280.png');
-
-}
-
-/**************   Fin Fondo Pantalla ********************/
 section{
   margin: 1em;
   padding: 1em;
@@ -72,13 +69,18 @@ section{
   box-sizing: border-box;
 }
 .complementaria{
-  line-height: .5em;
+  line-height: 1.4em;
 }
 /************** Logos Herramientas ***********/
+.habilidades{
+  border: 1px solid #ddd;
+
+}
 .lista-habilidades {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
+
 }
 
 .logo {
@@ -95,7 +97,18 @@ section{
 }
 
 /************** FIN Logos Herramientas ***********/
-
+/*****************Seccion otros  ****************/
+.otros{
+  border:  solid #ddd;
+  display: flex;
+}
+.columna2{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  /* box-sizing: border-box; */
+}
+/*****************FIn Seccion otros  ****************/
 
 
 /* Estilos del pie de página */
@@ -103,11 +116,26 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center;
-  position: fixed;
+  /* text-align: right;  */
   bottom: 0;
   width: 100%;
+} 
+.footer{
+  display: flex;
 }
+.columna-1{
+  flex: 1;
+  margin-left: 10%;
+  font-size: 25px;
+}
+.columna-2{
+  flex: 3;
+  text-align: right;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+/*FIN Estilos del pie de página */
 
 /* Estilos adicionales para mejorar la apariencia */
 
@@ -119,3 +147,5 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
