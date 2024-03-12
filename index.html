@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae - [Tu nombre completo]</title>
+  <title>Curriculum Vitae - Alberto Vicente Fernández</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="print.css" media="print"></head>
@@ -35,28 +35,128 @@
         <i class="fab fa-linkedin-in"></i>
       </a>
     </section>
-    <input type="button" value="Imprimir" class="printbutton" id="boton">
-
+    <div class="grow algo "><button onclick="imprimir()" class="noimprimir btnimpr"><img src="./img/logos/imprimir.png" class="noimprimir imgpdf" alt="pdf">
   </header>
-
-  <section class="experiencia">
-    <h2>Experiencia Laboral</h2>
-    <ul>
-      <li>
-        <h3>Patrimonio nacional</h3>
-        <h3>Desarrollador de aplicaciones con tecnologia web</h3>
-        <p>Octubre 2023 - Octubre 2024</p>
+  <div id="fondo">
+  <div class="fila">
+    <div class="columna">
+      <section class="experiencia">
+          <h2>Experiencia Laboral</h2>
+          <ul>
+            <li>
+              <h3>Patrimonio Nacional</h3>
+              <h3>Desarrollador de aplicaciones con tecnologia web</h3>
+              <p>Octubre 2023 - Octubre 2024</p>
+              <ul>
+                <li> Desarrollo de aplicaciones con tecnología web</li>
+                <li>Manejo de base de datos</li>
+                <li>Frontier orientado a web</li>
+              </ul>
+            </li>
+            
+          </ul>
+      </section>
+    </div>
+    <div class="columna">
+      <section class="complementaria">
+        <h2>Formación Complementaria</h2>
+        <h3>Curso ifcd-0210</h3>
         <ul>
-          <li> Desarrollo de aplicaciones con tecnología web</li>
-          <li>Manejo de base de datos</li>
-          <li>Frontier orientado a web</li>
+          <li>
+            <h3>patrimonio nacional-tandem</h3>
+            <p>octubre2023 - octubre2024</p>
+            <ul>
+              <li>     590 horas</li>
+            </ul>
+          </li>
+          <li>
+            <h3>curso prl-quiron</h3>
+            <p>julio 2023</p>
+            <ul>
+              <li>     30 horas</li>
+            </ul>
+          </li>
+          <li>
+            <h3>emprendimiento</h3>
+            <p>septiembre 2023</p>
+            <ul>
+              <li>     36 horas</li>
+            </ul>
+          </li>
+
+          
         </ul>
-      </li>
-      
-    </ul>
-  </section>
+      </section>
+    </div>
+  </div>
   <section class="educacion">
-    <h2>Educación</h2>
+  <section class="habilidades">
+    <h2>Herramientas</h2>
+    <div class="lista-habilidades">
+      <div class="logo">
+        <img src="./img/logos/descarga.png" width="50px" alt="html5">
+        <div class="logo-name">HTML5</div>
+        <progress id="progreso" max="100" value="90">90%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/css3.png" width="35px" alt="css3">
+        <div class="logo-name">CSS3</div>
+        <progress id="progreso" max="100" value="70">70%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/javascript.png" width="46px" alt="javascript">
+        <div class="logo-name">JavaScript</div>
+        <progress id="progreso" max="100" value="70">70%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/vscode.png" width="50px" alt="vscode">
+        <div class="logo-name">VScode</div>
+        <progress id="progreso" max="100" value="90">90%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/php2.png" width="50px" alt="php">
+        <div class="logo-name">PHP</div>
+        <progress id="progreso" max="100" value="30">30%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/git.png" width="50px" alt="github">
+        <div class="logo-name">GitHub</div>
+        <progress id="progreso" max="100" value="100">100%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/mysql.png" width="70px" alt="mysql">
+        <div class="logo-name">MySql</div>
+        <progress id="progreso" max="100" value="30">30%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/bootstrap.png" width="61px" alt="bootstrap">
+        <div class="logo-name">Bootstrap</div>
+        <progress id="progreso" max="100" value="90">90%</progress>
+
+      </div>
+      <div class="logo">
+        <img src="./img/logos/openai.png" width="50px" alt="Manejo IA">
+        <div class="logo-name">Manejo IA</div>
+        <progress id="progreso" max="100" value="70">70%</progress>
+      </div>
+      
+      <div class="logo">
+        <img src="./img/logos/python.png" width="46px" alt="Manejo IA">
+        <div class="logo-name">Python</div>
+        <progress id="progreso" max="100" value="30">30%</progress>
+      </div>
+      
+
+    </div>
+  </section>
+    <h2>Formación</h2>
     <ul>
       <li>
         <h3>Bachillerato</h3>
@@ -69,14 +169,7 @@
       
     </ul>
   </section>
-  <section class="habilidades">
-    <h2>Habilidades</h2>
-    <ul class="lista-habilidades">
-      <li>[Habilidad 1]</li>
-      <li>[Habilidad 2]</li>
-      <li>[Habilidad 3]</li>
-      </ul>
-  </section>
+  
   <section class="otros">
     <h2>Idiomas</h2>
     <ul>
@@ -89,7 +182,7 @@
       <li>[Interés 2]</li>
     </ul>
   </section>
-
+  </div>
   <!-- <footer>
     <p>Creado por: <a href="mailto:albervife.com">albervife@gmail.com</a>  / <a href="https://github.com/albrtovicente?tab=repositories">Github</a> / 2024 </p>
   </footer> -->
@@ -98,16 +191,19 @@
   </footer>
 
   <script>
+    function imprimir(){
+      window.print()
+    }
     function changeTab(tabId) {
-      // Ocultar todos los contenidos de las pestañas
-      var tabContents = document.querySelectorAll('.tab-content');
-      tabContents.forEach(function (content) {
-        content.classList.remove('active');
-      });
+    // Ocultar todos los contenidos de las pestañas
+    var tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(function (content) {
+      content.classList.remove('active');
+    });
 
-      // Mostrar el contenido de la pestaña seleccionada
-      var selectedTabContent = document.getElementById(tabId);
-      selectedTabContent.classList.add('active');
+    // Mostrar el contenido de la pestaña seleccionada
+    var selectedTabContent = document.getElementById(tabId);
+    selectedTabContent.classList.add('active');
     }
 
     document.querySelectorAll('.printbutton').forEach(function(element) {

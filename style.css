@@ -1,10 +1,12 @@
 body {
-  margin: 0;
+  margin: 0px;
   font-family: 'Raleway';
   font-size: small;
   line-height: 1.8em;
-} 
+  background-color: #FFEAE5;
 
+} 
+/**************** Header **********************/
 header {
   padding: 2em;
   text-align: center;
@@ -27,20 +29,73 @@ header img {
 header, main, footer {
   margin: 0 auto;
 }
+/*****************Fin Header ********************/
+/**************** Boton Imprimir ****************/
+.btnimpr{
+  background-color: transparent;
+  color: white;
+  border: 3px groove black;
+  /* padding: 1px; */
+  font-size: 5px;
+  font-weight: bold;
+  /* margin: 20px; */
+}
+.btnimpr:hover{
+  cursor: pointer;
+  background-color: #2d9ac5;
+}
+.imgpdf{
+  width: 40px;
+  height: 40px;
+}
+/**************** Fin Boton Imprimir ****************/
+/**************   Fondo Pantalla ********************/
+#fondo{
+  background-image: url('./img/uncle-sam-304887_1280.png');
 
+}
+
+/**************   Fin Fondo Pantalla ********************/
 section{
   margin: 1em;
   padding: 1em;
 }
 
-/* a {
-  color: #0bb6ff;
-  text-decoration: none;
+.fila {
+  display: flex;
 }
 
-a:hover {
-  opacity: 0.5;
-} */
+.columna {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.complementaria{
+  line-height: .5em;
+}
+/************** Logos Herramientas ***********/
+.lista-habilidades {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-name {
+  margin-top: 5px;
+}
+
+/************** FIN Logos Herramientas ***********/
+
 
 
 /* Estilos del pie de página */
