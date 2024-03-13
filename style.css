@@ -5,14 +5,14 @@
 }
 body {
   font-family: 'Raleway';
-  font-size: small;
+  /* font-size: small; */
   line-height: 1.8em;
   background-color: whitesmoke;
 
 } 
 /**************** Header **********************/
 header {
-  padding: 2em;
+  padding: 1em;
   text-align: center;
   background-image: url('./img/encabezado.png');
   background-size: cover;
@@ -25,6 +25,11 @@ header section {
   max-width: 640px;
 }
 
+header p{
+  text-align: center;
+  /* margin: 50px; */
+
+}
 header img {
   border-radius: 50%;
   max-width: 150px;
@@ -65,20 +70,34 @@ section{
 .columna {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ddd;
+/* BORDE */
+  border: 3px solid #ABA7A7;
+  box-shadow: 0 0 10px #D3D3D3;
+  padding: 20px;
+/* fin BORDE */
   box-sizing: border-box;
+}
+.experiencia li{
+  margin-left:1em;
 }
 .complementaria{
   line-height: 1.4em;
 }
+.complementaria li{
+  margin-left:3em;
+}
 /************** Logos Herramientas ***********/
-.habilidades{
-  border: 1px solid #ddd;
-
+.herramientas{
+  /* BORDE */
+  border: 3px solid #ABA7A7;
+  box-shadow: 0 0 10px #D3D3D3;
+  padding: 20px;
+/* fin BORDE */
 }
 .lista-habilidades {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(4, 1fr); */
   grid-gap: 10px;
 
 }
@@ -99,13 +118,17 @@ section{
 /************** FIN Logos Herramientas ***********/
 /*****************Seccion otros  ****************/
 .otros{
-  border:  solid #ddd;
+  /* border:  solid #ddd; */
   display: flex;
 }
 .columna2{
   flex: 1;
   padding: 10px;
-  border: 1px solid #ddd;
+  /* BORDE */
+  border: 3px solid #ABA7A7;
+  box-shadow: 0 0 10px #D3D3D3;
+  padding: 20px;
+/* fin BORDE */
   /* box-sizing: border-box; */
 }
 /*****************FIn Seccion otros  ****************/
@@ -136,7 +159,19 @@ footer {
 }
 
 /*FIN Estilos del pie de página */
+@media screen and (max-width: 768px) {
+  header img {
+    max-width: 100px; /* Reducir el tamaño de la imagen del encabezado en dispositivos pequeños */
+  }
 
+  .columna {
+    padding: 5px; /* Reducir el espacio entre las columnas en dispositivos pequeños */
+  }
+
+  .logo-name {
+    font-size: 12px; /* Reducir el tamaño del nombre de las herramientas en dispositivos pequeños */
+  }
+}
 /* Estilos adicionales para mejorar la apariencia */
 
 a {
