@@ -95,15 +95,16 @@ section{
 /* fin BORDE */
 }
 .lista-habilidades {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-gap: 10px;
-
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 30px;
 }
 
 .logo {
   text-align: center;
+  margin: 30px;
+
 }
 
 .logo img {
@@ -118,8 +119,9 @@ section{
 /************** FIN Logos Herramientas ***********/
 /*****************Seccion otros  ****************/
 .otros{
-  /* border:  solid #ddd; */
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .columna2{
   flex: 1;
@@ -129,15 +131,14 @@ section{
   box-shadow: 0 0 10px #D3D3D3;
   padding: 20px;
 /* fin BORDE */
-  /* box-sizing: border-box; */
 }
 /*****************FIn Seccion otros  ****************/
 
 
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #223f63;
+  color: #000000;
   padding: 20px;
   /* text-align: right;  */
   bottom: 0;
@@ -146,6 +147,20 @@ footer {
 .footer{
   display: flex;
 }
+  @media only screen and (max-width: 576px) {
+     .columna-1{
+      display: none;
+     }
+     .columnaOculta{
+      display: inline;
+     }
+  }
+  @media only screen and (min-width: 2px) {    
+    .columnaOculta{
+     display: none;
+    }
+ }
+
 .columna-1{
   flex: 1;
   margin-left: 10%;
