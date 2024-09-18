@@ -10,11 +10,100 @@ body {
   background-color: whitesmoke;
 
 } 
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 16px;
+}
+
+/*** <--- circulo ---> ***/
+.circulos {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  /* background: #000; */
+}
+
+.circulo {
+  
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #FFCDB2;
+  overflow: hidden;
+}
+.circulo.per-90 {
+  background-image: conic-gradient(#105ded 90%, #869fc4 0);
+}
+.circulo.per-50 {
+  background-image: conic-gradient(#B5838D 50%, #FFCDB2 0);
+}
+.circulo.per-75 {
+  background-image: conic-gradient(#B5838D 75%, #FFCDB2 0);
+}
+.circulo.per-75 {
+  background-image: conic-gradient(#B5838D 75%, #FFCDB2 0);
+}
+.circulo.per-100 {
+  background-image: conic-gradient(#B5838D 100%, #FFCDB2 0);
+}
+.circulo .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  /* background: #000; */
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+.inner1{
+  background-image: url('./img/logos/css.png');
+  background-size: cover;
+  background-position: fixed;
+}
+.inner2{
+  background-image: url('./img/logos/html.png');
+  background-size: cover;
+  background-position: fixed;
+}
+.inner3{
+  background-image: url('./img/logos/js.png');
+  background-size: cover;
+  background-position: fixed;
+  background-size: 100px;  
+}
+.inner4{
+  background-image: url('./img/logos/react.png');
+  background-size: cover;
+  background-position: fixed;
+}
+.porcentaje{
+  margin-top: 120px;
+  font-size: 40px;
+}
 /**************** Header **********************/
 header {
   padding: 1em;
   text-align: center;
-  background-image: url('./img/encabezado.png');
+  background-image: url('./img/5.jpg');
   background-size: cover;
   background-position: fixed;
   color: rgb(0, 0, 0);
@@ -78,11 +167,15 @@ section{
 /* fin BORDE */
   box-sizing: border-box;
 }
+.experiencia{
+  font-size: 16px;
+
+}
 .experiencia li{
   margin-left:1em;
 }
 .complementaria{
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4em;
   margin-top: 0px;
   padding: 0px;
@@ -93,9 +186,12 @@ section{
 /************** Logos Herramientas ***********/
 .herramientas{
   /* BORDE */
+  background-image: url('./img/5.jpg');
+  background-size: cover;
+  background-position: fixed;
   border: 3px solid #ABA7A7;
   box-shadow: 0 0 10px #D3D3D3;
-  padding: 20px;
+  /* padding: 20px; */
 /* fin BORDE */
 }
 .lista-habilidades {
@@ -103,12 +199,12 @@ section{
   flex-wrap: wrap;
   align-content: center;
   margin: 10px;
-  width: 100vh;
+  
 }
 
 .logo {
   text-align: center;
-  margin: 30px;
+  margin: 2px;
 
 }
 
