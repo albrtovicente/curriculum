@@ -262,6 +262,14 @@ footer {
      display: none;
     }
  }
+ @media print {
+  .noimprimir {
+    display: none !important;
+  }
+  body {
+    font-size: 10pt; /* Ajusta este número al tamaño que prefieras */
+  }
+}
 
 .columna-1{
   flex: 1;
